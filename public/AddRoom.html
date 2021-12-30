@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+   
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="AddR"></div>
+    <!-- built files will be auto injected -->
+
+    <form
+    id="app"
+    @submit="checkForm"
+    action="https://vuejs.org/"
+    method="post"
+  >
+  
+
+  
+    <p>
+      <label for="Room name">Room name</label>
+      <input
+        id="name"
+        v-model="name"
+        type="text"
+        name="name"
+      >
+    </p>
+  
+    <p>
+      <label for="Current Temperature">Current Temperature</label>
+      <input
+        id="temp"
+        v-model="temp"
+        type="number"
+        name="temp"
+      >
+    </p>
+  
+    <p>
+      <label for="IdBuilding">Building Id</label>
+      <select
+        id="idb"
+        v-model="idb"
+        name="idb"
+      >
+        <option>Star Wars</option>
+        <option>Vanilla Sky</option>
+        <option>Atomic Blonde</option>
+      </select>
+    </p>
+  
+    <p>
+      <input
+        type="submit"
+        value="Submit"
+      >
+    </p>
+  
+  </form>
+
+  </body>
+</html>

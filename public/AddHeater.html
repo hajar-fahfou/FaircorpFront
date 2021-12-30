@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+   
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="AddR"></div>
+    <!-- built files will be auto injected -->
+
+    <form
+    id="app"
+    @submit="checkForm"
+    action="https://vuejs.org/"
+    method="post"
+  >
+  
+
+  
+    <p>
+      <label for="Heater name">Heater name</label>
+      <input
+        id="name"
+        v-model="name"
+        type="text"
+        name="name"
+      >
+    </p>
+  
+    
+  
+  </form>
+
+  </body>
+</html>
